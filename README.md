@@ -1,18 +1,17 @@
-# IEcO
-![cover](https://user-images.githubusercontent.com/7274106/179380246-00d89efc-48f0-4212-a5e5-d5c6cac38c01.png)
+# EmiCerti
+![cover](https://user-images.githubusercontent.com/7274106/192119399-3e483978-5bc5-4638-b313-ba3f28974ae5.png)
 
 
-IEcO is the Initial Coin Offering for ReFi webapp, built with C# for Hedera Hashgraph Network.
+EmiCerti is the Initial Coin Offering for ReFi webapp, built with C# and HelloSign for Hedera Hashgraph Network.
 
-You can try the demo: https://iecoapp.azurewebsites.net/ 
+You can try the demo: https://emicerti.azurewebsites.net/
 
 You can create sustainable projects, filling in specific information and collect HBAR, in exchange for tokens given to the contributors of your project (the tokens are created at the time of creating the project).
 You can also create a test Hedera account to use for your app.
 
-This project use [Hashgraph](https://bugbytesinc.github.io/Hashgraph/), a .NET library to access the Hedera network.
+This project use [Hashgraph](https://bugbytesinc.github.io/Hashgraph/), and [HelloSign SDK](https://github.com/hellosign/hellosign-dotnet-sdk/tree/openapi)
 
-You can view how IEcO works in this [Youtube video](https://youtu.be/SOFH_4grcOg).
-![image](https://user-images.githubusercontent.com/7274106/179380270-e6e17882-b89b-484e-9017-8b9eb35a49b0.png)
+You can view how EmiCerti works in this [Youtube video](https://www.youtube.com/watch?v=u3edWo7NQyU).
 
 
 ## License
@@ -36,7 +35,6 @@ What you can currently do in the web app is:
 
 
 ## Use this project
-**The internal name for this project is EmiCert**
 
 First, you need to update the database applying the available migration in the project:
 ```sh
@@ -61,6 +59,7 @@ You need to edit the **appsettings.json** file for adding:
 - HederaAccountId: The Hedera Account Id for govern this app (send transactions, create tokens, create Hedera test accounts, etc.).
 - HederaPublicKey: The Hedera Public Key for govern this app (send transactions, create tokens, create Hedera test accounts, etc.).
 - HederaPrivateKey: The Hedera Private Key for govern this app (send transactions, create tokens, create Hedera test accounts, etc.).
+- HelloSignAPI: The API Key for HelloSign.
 
 ## Contributions
 
